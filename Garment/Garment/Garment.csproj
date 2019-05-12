@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2235161-6C88-4D3D-90ED-54DA5B2F0BF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Garment</RootNamespace>
+    <AssemblyName>Garment</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Garment\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DAB5427060D5F6B74B07F16DFFFD64139A3C1EA0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Garment_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccInfo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item.Designer.cs">
+      <DependentUpon>Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductUC.Designer.cs">
+      <DependentUpon>ProductUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ProductsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\ProductsUC.Designer.cs">
+      <DependentUpon>ProductsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales price.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sales price.Designer.cs">
+      <DependentUpon>Sales price.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item.resx">
+      <DependentUpon>Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductUC.resx">
+      <DependentUpon>ProductUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ProductsUC.resx">
+      <DependentUpon>ProductsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales price.resx">
+      <DependentUpon>Sales price.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Garment_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-26 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-price-tag-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-64 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-64 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-64 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-price-tag-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clothes-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57-359.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57-3591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dunheger_Logo_t-shirt____white_men_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saint-laurent-sandals-with-logo-heel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kids-velcro-shoes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajio-mid-rise-slim-cargo-pants-with-biker-panels.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stylish-Mens-Eid-Kurtas-Ideas-2018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K674-l-bonanza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherrys-9588-3070795-1-zoom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winter-layers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajio-mid-rise-slim-cargo-pants-with-biker-panels1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %285%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %286%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %287%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2811%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kids-velcro-shoes1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kids-velcro-shoes2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherrys-9588-3070795-1-zoom1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-500x5001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %283%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %287%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %285%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %289%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %288%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2810%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2811%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %283%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %288%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %285%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %286%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %289%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2813%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2810%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2812%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2811%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2814%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2815%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2817%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2814%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2818%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2819%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2820%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2821%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2822%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2824%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2823%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2826%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2825%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2828%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2827%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2829%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2830%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2834%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2831%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2832%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2835%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2836%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2837%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2838%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2839%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2843%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2845%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2844%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2842%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2841%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2846%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61T+jGLoVlL._UX385_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2847%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2851%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2852%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2850%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2853%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2854%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2855%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2856%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2856%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2857%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2858%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2859%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2851%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2852%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2850%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2853%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2862%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2861%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2864%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2863%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2866%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2867%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2868%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2869%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2870%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2871%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2873%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2872%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2875%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2874%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2876%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2879%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2880%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2878%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2877%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2882%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2881%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2883%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2884%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu Vertical_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-480.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-4801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-4802.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-4803.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-480 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-480 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-480 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-480 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-480 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-web-search-482.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_32px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facebook-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-twitter-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-twitter-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-shopping-cart-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clear-shopping-cart-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-shopping-cart-filled-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-shopping-cart-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-shopping-cart-filled-50 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-filled-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clear-shopping-cart-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-52 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facebook-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-twitter-261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-64 %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trolley-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-64 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-filled-351.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-64 %283%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trolley-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-64 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Show Password_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facebook-302.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-twitter-262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-263.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-264.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-263.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-64 %283%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-64 %281%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trolley-642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-263.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-265.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-266.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-324.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-filled-352.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-264.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-265.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-267.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="files\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

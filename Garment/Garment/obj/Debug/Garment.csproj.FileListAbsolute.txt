@@ -1,0 +1,33 @@
+D:\Garment\Garment\bin\Debug\Garment.exe.config
+D:\Garment\Garment\bin\Debug\Garment.exe
+D:\Garment\Garment\bin\Debug\Garment.pdb
+D:\Garment\Garment\obj\Debug\Garment.csprojResolveAssemblyReference.cache
+D:\Garment\Garment\obj\Debug\Garment.Form1.resources
+D:\Garment\Garment\obj\Debug\Garment.Form2.resources
+D:\Garment\Garment\obj\Debug\Garment.Home.resources
+D:\Garment\Garment\obj\Debug\Garment.Info.resources
+D:\Garment\Garment\obj\Debug\Garment.Item.resources
+D:\Garment\Garment\obj\Debug\Garment.Login.resources
+D:\Garment\Garment\obj\Debug\Garment.ProductUC.resources
+D:\Garment\Garment\obj\Debug\Garment.Properties.Resources.resources
+D:\Garment\Garment\obj\Debug\Garment.Resources.ProductsUC.resources
+D:\Garment\Garment\obj\Debug\Garment.Sales_price.resources
+D:\Garment\Garment\obj\Debug\Garment.csproj.GenerateResource.Cache
+D:\Garment\Garment\obj\Debug\Garment.exe
+D:\Garment\Garment\obj\Debug\Garment.pdb
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\bin\Debug\Garment.exe.config
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\bin\Debug\Garment.exe
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\bin\Debug\Garment.pdb
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.Form1.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.Form2.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.Home.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.Info.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.Item.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.Login.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.ProductUC.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.Properties.Resources.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.Resources.ProductsUC.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.Sales_price.resources
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.csproj.GenerateResource.Cache
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.exe
+C:\Users\anasb\Documents\Visual Studio 2013\Projects\Garment\Garment\obj\Debug\Garment.pdb

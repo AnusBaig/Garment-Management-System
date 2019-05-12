@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Garment.exe" version="1.0.0.0" publicKeyToken="c16d1551abb58f51" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Garment" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Garment.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Garment.exe" size="10384304">
+      <assemblyIdentity name="Garment" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vAxcOeTADFqsCjs48iwza6kF2t7k7TiGce3zEHubeuU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Garment.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ANUS-PC\anasb" issuerKeyHash="48b323277219f3479bc83422e128ac73e767699f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>voNe2qO2VGEVXkj3tiWDMD96r5G1cHaiKsuc6FZ/Oww=</DigestValue></Reference></SignedInfo><SignatureValue>cnKJycJbyldWSGkAzyItCFoDgB03k0inw1kLZV+x31JEpog6BtGGRMwolYYSPNwrsgr0jm+UH1ZAhEJM0D5P0n43YJFBRDkIt3i++InDPkiw7/+TmdENJs+O3H2IixtRW5gWXWHG5zl6J1RMmJC8PKSjFLpM9LdNUvjepyqUANY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>7m5Q2lBcOTrftTR2qUwd/yBrKJ8IgCPZg+jGK0vzFFVXMoUkImOuTr78wLoggJkeEXzj+bZUFyJjLRyWWKSnZ5Q/HPwlKRQe9Bh3gLCtMxDyTrJJa/+D00+LHCRrTub0KROWbobjTmn5QMbfmMSZILuYjXF81OER/0wEoSRP5Kk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0c3b7f56e89ccb2aa27670b591af7a3f308325b6f7485e156154b6a3da5e83be" Description="" Url=""><as:assemblyIdentity name="Garment.exe" version="1.0.0.0" publicKeyToken="c16d1551abb58f51" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ANUS-PC\anasb</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>dUZpaaw45XRr7IGRL5mQV0esAQHTpCzz6fRGe5n6W7c=</DigestValue></Reference></SignedInfo><SignatureValue>FPYIpqripaIO2K2+edIer2Kvz4COy6qEeZ4tm+Z5DKT54ak+BZBoegz5Us/IoWSkmpV0k9DlWn3YiBeSYpVnBnJEZidPGsWHw8LcR+HWkKW9ShvvHNGt8cxaVARuOEx6DP3dM/D5maZK0KAb/0QVViJHfz2A5GFNnE6MDvTkw2k=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7m5Q2lBcOTrftTR2qUwd/yBrKJ8IgCPZg+jGK0vzFFVXMoUkImOuTr78wLoggJkeEXzj+bZUFyJjLRyWWKSnZ5Q/HPwlKRQe9Bh3gLCtMxDyTrJJa/+D00+LHCRrTub0KROWbobjTmn5QMbfmMSZILuYjXF81OER/0wEoSRP5Kk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATagAwIBAgIQFxgWwrBm2rxBsm8bAV9ShTANBgkqhkiG9w0BAQsFADAlMSMwIQYDVQQDHhoAQQBOAFUAUwAtAFAAQwBcAGEAbgBhAHMAYjAeFw0xODA4MjUxODI5NTdaFw0xOTA4MjYwMDI5NTdaMCUxIzAhBgNVBAMeGgBBAE4AVQBTAC0AUABDAFwAYQBuAGEAcwBiMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDublDaUFw5Ot+1NHapTB3/IGsonwiAI9mD6MYrS/MUVVcyhSQiY65OvvzAuiCAmR4RfOP5tlQXImMtHJZYpKdnlD8c/CUpFB70GHeAsK0zEPJOsklr/4PTT4scJGtO5vQpE5ZuhuNOaflAxt+YxJkgu5iNcXzU4RH/TAShJE/kqQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJPFAwbRYZAEJMiUzl/1i56apVV1t/iwnM9N8eTAZ+zjPxiix9gu5Q55pa8yOZA554tR8wTKZ72Z66Ie56VevLFvkz0OIvBlLEXvLksHGrdlORCj9rPc1xu1oBkdH2xP367dh+aqn6K78p0AsxV5ZL5G6WIBi0swAP8+mbrLDsDI</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
